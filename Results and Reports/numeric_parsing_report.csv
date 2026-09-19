@@ -1,0 +1,16 @@
+table,column,missing,invalid,usable
+transactions,amount,5,0,983
+transactions,balance_after_txn,0,0,988
+transactions,distance_from_home_km,0,0,988
+transactions,time_since_prev_txn_mins,154,0,834
+transactions,amount_to_account_avg_ratio,154,0,834
+transactions,txn_count_last_24h,0,0,988
+transactions,txn_count_last_7d,0,0,988
+transactions,transaction_hour,0,0,988
+accounts,current_balance,0,0,178
+accounts,avg_monthly_balance_6m,0,0,178
+accounts,credit_limit,0,0,178
+accounts,credit_utilization_pct,0,0,178
+accounts,num_linked_devices,0,0,178
+accounts,avg_monthly_txn_count,0,0,178
+customers,annual_income,7,0,117

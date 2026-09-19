@@ -1,0 +1,186 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "stage": "before_fine_tuning",
+  "quantization": "4-bit NF4",
+  "adapters_enabled": false,
+  "max_new_tokens": 160,
+  "do_sample": false,
+  "system_prompt": "Assess transaction behavior using only the supplied structured evidence.\nReturn only JSON with exactly:\n{\"is_fraud\": boolean, \"confidence\": number, \"reason_codes\": [\"CODE\"]}\n\nConfidence means uncalibrated confidence in the selected classification.\nChoose reason_codes only from available_reason_codes.\nFor is_fraud=true, provide at least one available reason code.\nSignals suggest risk, not proof. Consider legitimate alternatives.\nMissing information and data_review_required alone do not establish fraud.\nNo available screening signal does not prove that a transaction is safe.\nDo not invent facts, reason codes, or extra output fields.",
+  "comparison_ids": [
+    "TXN_0000974",
+    "TXN_0000695",
+    "TXN_0000714",
+    "TXN_0000796",
+    "TXN_0000795",
+    "TXN_0000588"
+  ],
+  "evidence": {
+    "TXN_0000974": {
+      "amount": 22574.7,
+      "currency": "INR",
+      "status": "SUCCESS",
+      "auth_method": "PIN",
+      "is_new_device": false,
+      "is_foreign_transaction": false,
+      "prior_24h_count_in_available_data": 1,
+      "amount_to_prior_median_ratio": 11.589,
+      "data_review_required": false,
+      "available_reason_codes": [
+        "AMOUNT_SPIKE"
+      ]
+    },
+    "TXN_0000695": {
+      "amount": 14590.56,
+      "currency": "INR",
+      "status": "SUCCESS",
+      "auth_method": "OTP",
+      "is_new_device": true,
+      "is_foreign_transaction": false,
+      "prior_24h_count_in_available_data": 1,
+      "amount_to_prior_median_ratio": 16.644,
+      "data_review_required": false,
+      "available_reason_codes": [
+        "AMOUNT_SPIKE"
+      ]
+    },
+    "TXN_0000714": {
+      "amount": 7710.13,
+      "currency": "INR",
+      "status": "SUCCESS",
+      "auth_method": "OTP",
+      "is_new_device": false,
+      "is_foreign_transaction": false,
+      "prior_24h_count_in_available_data": 3,
+      "amount_to_prior_median_ratio": 8.516,
+      "data_review_required": false,
+      "available_reason_codes": [
+        "AMOUNT_SPIKE"
+      ]
+    },
+    "TXN_0000796": {
+      "amount": 25.0,
+      "currency": "INR",
+      "status": "SUCCESS",
+      "auth_method": "BIOMETRIC",
+      "is_new_device": true,
+      "is_foreign_transaction": false,
+      "prior_24h_count_in_available_data": 0,
+      "amount_to_prior_median_ratio": null,
+      "data_review_required": false,
+      "available_reason_codes": []
+    },
+    "TXN_0000795": {
+      "amount": 5166.58,
+      "currency": "INR",
+      "status": "UNKNOWN",
+      "auth_method": "BIOMETRIC",
+      "is_new_device": false,
+      "is_foreign_transaction": false,
+      "prior_24h_count_in_available_data": 1,
+      "amount_to_prior_median_ratio": 0.751,
+      "data_review_required": false,
+      "available_reason_codes": []
+    },
+    "TXN_0000588": {
+      "amount": 736.65,
+      "currency": "INR",
+      "status": "FAILED",
+      "auth_method": "PIN",
+      "is_new_device": true,
+      "is_foreign_transaction": false,
+      "prior_24h_count_in_available_data": 0,
+      "amount_to_prior_median_ratio": null,
+      "data_review_required": false,
+      "available_reason_codes": []
+    }
+  },
+  "results": [
+    {
+      "transaction_id": "TXN_0000974",
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_SPIKE\"]}",
+      "parsed_output": {
+        "is_fraud": true,
+        "confidence": 0.95,
+        "reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 4.46,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000695",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.85, \"reason_codes\": [\"AMOUNT_SPIKE\"]}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.85,
+        "reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.465,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000714",
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_SPIKE\"]}",
+      "parsed_output": {
+        "is_fraud": true,
+        "confidence": 0.95,
+        "reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.725,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000796",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 1.0, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 1.0,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 1.718,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000795",
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_HIGH\", \"DEVICE_UNKNOWN\"]}",
+      "parsed_output": {
+        "is_fraud": true,
+        "confidence": 0.95,
+        "reason_codes": [
+          "AMOUNT_HIGH",
+          "DEVICE_UNKNOWN"
+        ]
+      },
+      "schema_valid": true,
+      "evidence_valid": false,
+      "seconds": 1.761,
+      "error": "Model selected an unsupported reason code."
+    },
+    {
+      "transaction_id": "TXN_0000588",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.98, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.98,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 1.328,
+      "error": null
+    }
+  ]
+}

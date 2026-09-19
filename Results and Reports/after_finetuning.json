@@ -1,0 +1,94 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "stage": "after_fine_tuning",
+  "supervision": "synthetic illustrative screening rules",
+  "adapters_enabled": true,
+  "comparison_ids": [
+    "TXN_0000974",
+    "TXN_0000695",
+    "TXN_0000714",
+    "TXN_0000796",
+    "TXN_0000795",
+    "TXN_0000588"
+  ],
+  "results": [
+    {
+      "transaction_id": "TXN_0000974",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.384,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000695",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.395,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000714",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.339,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000796",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.452,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000795",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.85,
+      "error": null
+    },
+    {
+      "transaction_id": "TXN_0000588",
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "parsed_output": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      },
+      "schema_valid": true,
+      "evidence_valid": true,
+      "seconds": 2.324,
+      "error": null
+    }
+  ]
+}

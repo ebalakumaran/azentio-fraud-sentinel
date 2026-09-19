@@ -1,0 +1,13 @@
+case,expected,before,after,before_pass,after_pass
+1,True,True,True,True,True
+2,False,False,False,True,True
+3,True,True,True,True,True
+4,False,False,True,True,False
+5,True,True,True,True,True
+6,False,True,False,False,True
+7,True,True,True,True,True
+8,False,False,False,True,True
+9,True,True,True,True,True
+10,False,True,False,False,True
+11,True,True,True,True,True
+12,False,False,False,True,True

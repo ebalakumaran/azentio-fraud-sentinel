@@ -1,0 +1,38 @@
+[
+  {
+    "transaction_id": "TXN_0000974",
+    "is_fraud": false,
+    "confidence": 0.75,
+    "justification": "The model did not flag fraud in the supplied behavior; this is not a guarantee of safety."
+  },
+  {
+    "transaction_id": "TXN_0000695",
+    "is_fraud": false,
+    "confidence": 0.75,
+    "justification": "The model did not flag fraud in the supplied behavior; this is not a guarantee of safety."
+  },
+  {
+    "transaction_id": "TXN_0000714",
+    "is_fraud": false,
+    "confidence": 0.75,
+    "justification": "The model did not flag fraud in the supplied behavior; this is not a guarantee of safety."
+  },
+  {
+    "transaction_id": "TXN_0000796",
+    "is_fraud": false,
+    "confidence": 0.75,
+    "justification": "The model did not flag fraud in the supplied behavior; this is not a guarantee of safety."
+  },
+  {
+    "transaction_id": "TXN_0000795",
+    "is_fraud": false,
+    "confidence": 0.75,
+    "justification": "The model did not flag fraud in the supplied behavior; this is not a guarantee of safety."
+  },
+  {
+    "transaction_id": "TXN_0000588",
+    "is_fraud": false,
+    "confidence": 0.75,
+    "justification": "The model did not flag fraud in the supplied behavior; this is not a guarantee of safety."
+  }
+]

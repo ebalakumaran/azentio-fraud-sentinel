@@ -1,0 +1,4 @@
+,input_rows,exact_duplicates_removed,retained_rows,missing_cells_after_normalization
+transactions,1000,12,988,1561
+accounts,178,0,178,259
+customers,124,0,124,107

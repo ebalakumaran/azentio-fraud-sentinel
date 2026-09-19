@@ -1,0 +1,12 @@
+{
+  "extra_text_and_PII_excluded": true,
+  "injected_category_neutralized": true,
+  "invalid_json_rejected": true,
+  "string_boolean_rejected": true,
+  "out_of_range_confidence_rejected": true,
+  "invented_reason_rejected": true,
+  "unsupported_positive_rejected": true,
+  "join_preserves_unique_transactions": true,
+  "all_original_rows_mapped": true,
+  "all_evidence_payloads_valid": true
+}

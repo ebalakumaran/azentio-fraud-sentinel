@@ -1,0 +1,3684 @@
+{
+  "supervision": "synthetic illustrative screening rules",
+  "not_ground_truth": true,
+  "seed": 42,
+  "examples": [
+    {
+      "evidence": {
+        "amount": 45750.93,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 2.791,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22641.15,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 9.494,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 54184.7,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 8.288,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 29871.5,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 1.984,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 17421.48,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 8.537,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 25618.87,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 13.791,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 8797.42,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 0.731,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 64408.63,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 12.98,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 17526.3,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 2.444,
+        "data_review_required": true,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 2129.94,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 0.302,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 49787.81,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 3.939,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 26676.39,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 2.078,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 68520.17,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 6.756,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 28494.88,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 0.716,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 71991.42,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 2.767,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 56051.33,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 8.016,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 46482.63,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 11.759,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22244.57,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 1.375,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 26590.53,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 14.04,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 34317.0,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 3.953,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 14565.42,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 8.822,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 59450.29,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 12.575,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 2433.18,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 0.365,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 74946.26,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 3.27,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 19921.99,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 2.56,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 64893.55,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 0.283,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 60553.91,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 9.109,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 26488.84,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 3.032,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 36153.75,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 14.3,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 28859.99,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 9.437,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 16491.2,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 6.902,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 25658.21,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 2.224,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 1562.94,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 13.412,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 54279.11,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 8.146,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 74967.97,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 1.07,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 20936.48,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 0.956,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 41389.75,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 1.779,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 26986.04,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 13.607,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 74253.34,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 1.912,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 56414.65,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 1.704,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 73247.87,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 7.32,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 23734.54,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 8.413,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 73767.94,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 6.596,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 33916.31,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 1.385,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 62574.87,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 13.732,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 16405.8,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 3.838,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 186.21,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 14.717,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 47517.45,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 11.279,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 49457.81,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 12.954,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 60997.67,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 6.152,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 16065.26,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 11.401,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 47879.06,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 10.228,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 23140.12,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 13.353,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 67909.7,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 12.031,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 40887.72,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 14.277,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 32321.93,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 1.647,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 62222.41,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 3.898,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 40741.57,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 12.211,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 30807.4,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 10.497,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 63005.73,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 3.474,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 54522.28,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 9.81,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22461.83,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 3.75,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 48035.98,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 7.052,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 58002.82,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 0.931,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 60397.93,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 1.432,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 21203.54,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 0.639,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 18343.31,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 2.63,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 48510.91,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 11.398,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 9716.52,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 12.453,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 18487.59,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 1.967,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 33955.21,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 1.903,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 38405.59,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 1.514,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 64818.4,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 12.497,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 59271.46,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 2.131,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 21501.04,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 2.582,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 29732.83,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 0.452,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 51826.64,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 12.341,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 62309.82,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 1.707,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 12918.28,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 7.49,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 30035.91,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 3.485,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 32744.11,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 3.041,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 44960.95,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 12.744,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 41324.1,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 1.998,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 55261.69,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 0.623,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 23657.34,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 3.292,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 9898.39,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 3.352,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 66569.16,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 3.466,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 32358.44,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 1.433,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 24571.26,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 11.006,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22739.84,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 13.41,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 5190.27,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 14.627,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 71109.89,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 13.863,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 10937.13,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 12.992,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 26312.03,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 1.987,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 71795.26,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 12.132,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 30697.97,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 7.779,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 59737.42,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 12.123,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 59269.85,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 6.544,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 1626.46,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 0.353,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 34931.05,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 6.699,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 8972.02,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 6.941,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 21052.54,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 3.368,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 69425.58,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 0.922,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 52398.93,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 7.434,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 57239.16,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 9.742,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 3076.65,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 3.778,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 43318.88,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 0.634,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 28683.28,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 0.808,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 60826.8,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 14.295,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 64023.25,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 0.222,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 37437.13,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 0.406,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 5735.77,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 12.542,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 50494.85,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 5.632,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22530.01,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 2.875,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 20963.03,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 7.32,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 18438.71,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 1.054,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 11932.37,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 0.236,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 18141.28,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 0.625,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 54643.2,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 1.975,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 34901.78,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 10.795,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 68973.67,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 1.477,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 56032.8,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 2.546,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 9645.67,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 3.371,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 35413.62,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 2.421,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 62411.13,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 8.605,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 53742.77,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 2.418,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 44304.51,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 10.206,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 56708.08,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 1.033,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 33222.98,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 0.353,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 51914.86,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 13.033,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 39503.81,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 7.155,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 58906.19,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 9.1,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 32717.99,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 9.618,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 40319.08,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 3.89,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 37763.49,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 3.042,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22734.04,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 1.041,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 61831.91,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 1.713,
+        "data_review_required": false,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 33322.82,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 1.82,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 35178.02,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 14.69,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 56669.36,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 2.205,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 44174.16,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 6.108,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 38123.95,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 10.323,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 64215.37,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 3.504,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 11915.24,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 14.366,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 70812.31,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 0.373,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 41135.61,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 2.528,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 51457.45,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 9.712,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.6,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 35303.78,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 14.971,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 8196.6,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 6,
+        "amount_to_prior_median_ratio": 11.256,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 64486.69,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 8,
+        "amount_to_prior_median_ratio": 2.598,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 45318.15,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 6.264,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 34106.95,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 5.81,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 21960.43,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 14.497,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 50147.32,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 13.875,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 70706.45,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 12,
+        "amount_to_prior_median_ratio": 1.869,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 24236.47,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 8.226,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 30658.5,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 2,
+        "amount_to_prior_median_ratio": 12.243,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 37210.63,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 11.866,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 49787.72,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "BIOMETRIC",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 8.96,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 60363.61,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "3DS",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 12.664,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    }
+  ]
+}

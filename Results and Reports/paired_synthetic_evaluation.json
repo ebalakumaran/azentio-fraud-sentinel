@@ -1,0 +1,559 @@
+{
+  "scope": "12 unseen examples from the synthetic screening policy",
+  "limitations": "Small synthetic test; not independent real-world fraud labels. Confidence calibration is not evaluated.",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "system_prompt": "Assess transaction behavior using only the supplied structured evidence.\nReturn only JSON with exactly:\n{\"is_fraud\": boolean, \"confidence\": number, \"reason_codes\": [\"CODE\"]}\n\nConfidence means uncalibrated confidence in the selected classification.\nChoose reason_codes only from available_reason_codes.\nFor is_fraud=true, provide at least one available reason code.\nSignals suggest risk, not proof. Consider legitimate alternatives.\nMissing information and data_review_required alone do not establish fraud.\nNo available screening signal does not prove that a transaction is safe.\nDo not invent facts, reason codes, or extra output fields.",
+  "max_new_tokens": 160,
+  "do_sample": false,
+  "test_examples": [
+    {
+      "evidence": {
+        "amount": 53584.58,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 5.761,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 54324.11,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "PIN",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 0.971,
+        "data_review_required": true,
+        "available_reason_codes": []
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 34837.77,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 0,
+        "amount_to_prior_median_ratio": 8.67,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 6381.47,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 7,
+        "amount_to_prior_median_ratio": 0.445,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 48521.03,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 10,
+        "amount_to_prior_median_ratio": 14.945,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 13430.3,
+        "currency": "INR",
+        "status": "FAILED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 6.832,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 34510.93,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 1,
+        "amount_to_prior_median_ratio": 10.272,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 41552.0,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 4,
+        "amount_to_prior_median_ratio": 3.562,
+        "data_review_required": true,
+        "available_reason_codes": [
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.6,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 22453.74,
+        "currency": "INR",
+        "status": "SUCCESS",
+        "auth_method": "NONE",
+        "is_new_device": true,
+        "is_foreign_transaction": true,
+        "prior_24h_count_in_available_data": 9,
+        "amount_to_prior_median_ratio": 2.272,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "HIGH_VELOCITY",
+          "NEW_DEVICE_FOREIGN"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 70962.31,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "OTP",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 5,
+        "amount_to_prior_median_ratio": 0.842,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "HIGH_VELOCITY"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    },
+    {
+      "evidence": {
+        "amount": 31752.03,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "NONE",
+        "is_new_device": false,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 11,
+        "amount_to_prior_median_ratio": 7.216,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY",
+          "NO_AUTH_RECORDED"
+        ]
+      },
+      "target": {
+        "is_fraud": true,
+        "confidence": 0.75,
+        "reason_codes": [
+          "AMOUNT_SPIKE",
+          "HIGH_VELOCITY"
+        ]
+      }
+    },
+    {
+      "evidence": {
+        "amount": 31026.81,
+        "currency": "INR",
+        "status": "REVERSED",
+        "auth_method": "PIN",
+        "is_new_device": true,
+        "is_foreign_transaction": false,
+        "prior_24h_count_in_available_data": 3,
+        "amount_to_prior_median_ratio": 9.258,
+        "data_review_required": false,
+        "available_reason_codes": [
+          "AMOUNT_SPIKE"
+        ]
+      },
+      "target": {
+        "is_fraud": false,
+        "confidence": 0.75,
+        "reason_codes": []
+      }
+    }
+  ],
+  "before": [
+    {
+      "case": 1,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 4.787,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"NEW_DEVICE_FOREIGN\", \"AMOUNT_SPIKE\", \"NO_AUTH_RECORDED\"]}",
+      "error": null
+    },
+    {
+      "case": 2,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 7.69,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.85, \"reason_codes\": []}",
+      "error": null
+    },
+    {
+      "case": 3,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 8.663,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_SPIKE\", \"NEW_DEVICE_FOREIGN\"]}",
+      "error": null
+    },
+    {
+      "case": 4,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.632,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.95, \"reason_codes\": [\"NO_AUTH_RECORDED\"]}",
+      "error": null
+    },
+    {
+      "case": 5,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.049,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_SPIKE\", \"NO_AUTH_RECORDED\"]}",
+      "error": null
+    },
+    {
+      "case": 6,
+      "expected": false,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": false,
+      "seconds": 1.644,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_SPIKE\"]}",
+      "error": null
+    },
+    {
+      "case": 7,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.413,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.85, \"reason_codes\": [\"NEW_DEVICE_FOREIGN\", \"NO_AUTH_RECORDED\", \"AMOUNT_SPIKE\"]}",
+      "error": null
+    },
+    {
+      "case": 8,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 1.603,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.98, \"reason_codes\": [\"NEW_DEVICE_FOREIGN\"]}",
+      "error": null
+    },
+    {
+      "case": 9,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.834,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.85, \"reason_codes\": [\"NEW_DEVICE_FOREIGN\", \"NO_AUTH_RECORDED\", \"HIGH_VELOCITY\"]}",
+      "error": null
+    },
+    {
+      "case": 10,
+      "expected": false,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": false,
+      "seconds": 1.735,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"HIGH_VELOCITY\"]}",
+      "error": null
+    },
+    {
+      "case": 11,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.049,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.95, \"reason_codes\": [\"AMOUNT_SPIKE\", \"NO_AUTH_RECORDED\"]}",
+      "error": null
+    },
+    {
+      "case": 12,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 1.591,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": [\"AMOUNT_SPIKE\"]}",
+      "error": null
+    }
+  ],
+  "after": [
+    {
+      "case": 1,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.21,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.75, \"reason_codes\": [\"AMOUNT_SPIKE\", \"NEW_DEVICE_FOREIGN\"]}",
+      "error": null
+    },
+    {
+      "case": 2,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.43,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "error": null
+    },
+    {
+      "case": 3,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.786,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.75, \"reason_codes\": [\"AMOUNT_SPIKE\", \"NEW_DEVICE_FOREIGN\"]}",
+      "error": null
+    },
+    {
+      "case": 4,
+      "expected": false,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": false,
+      "seconds": 3.16,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.75, \"reason_codes\": [\"HIGH_VELOCITY\", \"NO_AUTH_RECORDED\"]}",
+      "error": null
+    },
+    {
+      "case": 5,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.178,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.75, \"reason_codes\": [\"AMOUNT_SPIKE\", \"HIGH_VELOCITY\"]}",
+      "error": null
+    },
+    {
+      "case": 6,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.426,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "error": null
+    },
+    {
+      "case": 7,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.59,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.6, \"reason_codes\": [\"AMOUNT_SPIKE\", \"NEW_DEVICE_FOREIGN\"]}",
+      "error": null
+    },
+    {
+      "case": 8,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.203,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "error": null
+    },
+    {
+      "case": 9,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.984,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.6, \"reason_codes\": [\"HIGH_VELOCITY\", \"NEW_DEVICE_FOREIGN\"]}",
+      "error": null
+    },
+    {
+      "case": 10,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.234,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "error": null
+    },
+    {
+      "case": 11,
+      "expected": true,
+      "predicted": true,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 3.727,
+      "raw_output": "{\"is_fraud\": true, \"confidence\": 0.75, \"reason_codes\": [\"AMOUNT_SPIKE\", \"HIGH_VELOCITY\"]}",
+      "error": null
+    },
+    {
+      "case": 12,
+      "expected": false,
+      "predicted": false,
+      "schema_valid": true,
+      "evidence_valid": true,
+      "policy_match": true,
+      "seconds": 2.282,
+      "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "transaction_id": "TXN_0000974",
+    "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+    "review_required": false,
+    "error": null
+  },
+  {
+    "transaction_id": "TXN_0000695",
+    "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+    "review_required": false,
+    "error": null
+  },
+  {
+    "transaction_id": "TXN_0000714",
+    "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+    "review_required": false,
+    "error": null
+  },
+  {
+    "transaction_id": "TXN_0000796",
+    "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+    "review_required": false,
+    "error": null
+  },
+  {
+    "transaction_id": "TXN_0000795",
+    "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+    "review_required": false,
+    "error": null
+  },
+  {
+    "transaction_id": "TXN_0000588",
+    "raw_output": "{\"is_fraud\": false, \"confidence\": 0.75, \"reason_codes\": []}",
+    "review_required": false,
+    "error": null
+  }
+]

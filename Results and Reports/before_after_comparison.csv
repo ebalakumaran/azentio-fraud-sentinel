@@ -1,0 +1,7 @@
+transaction_id,schema_before,schema_after,evidence_before,evidence_after,fraud_before,fraud_after
+TXN_0000974,True,True,True,True,True,False
+TXN_0000695,True,True,True,True,False,False
+TXN_0000714,True,True,True,True,True,False
+TXN_0000796,True,True,True,True,False,False
+TXN_0000795,True,True,False,True,True,False
+TXN_0000588,True,True,True,True,False,False

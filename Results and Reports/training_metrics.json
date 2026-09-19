@@ -1,0 +1,7 @@
+{
+  "training_seconds": 241.9,
+  "peak_training_allocated_gib": 2.623,
+  "training_loss": 0.06623514220118523,
+  "training_examples": 160,
+  "epochs": 2
+}
